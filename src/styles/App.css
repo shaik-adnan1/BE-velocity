@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.App__heading {
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #1788FB;
+  width: 100%;
+}
+
+.App__heading h2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.App__header {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 0.5rem 0 2rem 0;
+}
+
+.App .App__button,
+.App .App__button:focus {
+  margin: 0.7rem 0;
+  background-color: #40CE5D;
+  width: auto;
+  min-width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 1px solid #40CE5D;
+  outline: none;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  height: auto;
+}
+
+.App .App__button:hover {
+  background-color: #33a44a;
+}
+
+.App .App__button--red,
+.App .App__button--red:focus {
+  background-color: #FF425E;
+  border: 1px solid #FF425E;
+}
+
+.App .App__button--red:hover {
+  background-color: #cc344b;
+  border: 1px solid #FF425E;
+}
+
+.App .App__button--yellow, 
+.App .App__button--yellow:focus {
+  background-color: #FECF48;
+  border: 1px solid #FECF48;
+}
+
+.App .App__button--yellow:hover {
+  background-color: #fec215;
+  border: 1px solid #FECF48;
+}
+
+.App .App__button--blue,
+.App .App__button--blue:focus {
+  background-color: #1788FB;
+  border: 1px solid #1788FB;
+}
+
+.App .App__button--blue:hover {
+  background-color: #126cc8;
+  border: 1px solid #1788FB;
+}
+
+@media only screen and (min-width: 481px) {
+  .App__heading {
+    padding: 1rem;
+  }
+
+  .App__heading h2 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+  }
+}

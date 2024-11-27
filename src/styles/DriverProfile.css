@@ -1,0 +1,37 @@
+.h1{
+  color:#000000;
+  font-size: 1rem;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.navTop{
+  width: 100%;
+  height: 80px;
+  background-color: #1890ff;
+}
+
+.driver {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.driver__display {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .driver__display {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+} 
+
+@media only screen and (min-width: 769px) { 
+  .driver__display {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+} 

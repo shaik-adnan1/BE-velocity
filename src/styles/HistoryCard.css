@@ -1,0 +1,151 @@
+.card {
+  background: #FCFCFC;
+  box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.27);
+  border-radius: 5px;
+  padding: 1rem 1rem 0 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  color: #8E8E8E;
+  overflow: auto;
+}
+
+.card__content {
+  display: flex;
+  width: 100%;
+}
+
+.card__profile {
+  margin: 0 auto auto auto;
+}
+
+.card__profile h3{
+  color: #8E8E8E;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card__img-box {
+  margin: 0;
+  width: 5.5rem;
+  min-width: 5.5rem;
+  height: 5.5rem;
+  min-height: 5.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.card__profile-img {
+  display: block;
+  margin-top: 0rem;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 0 0 0.5rem 1rem;
+  /* position: relative; */
+}
+
+.card__text span {
+  font-size: 0.7rem;
+}
+
+.card__price {
+  justify-self: flex-end;
+  margin-top: auto;
+  align-self: flex-end;
+  /* display: block;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+  padding: 0.1rem; */
+}
+
+.card__divider {
+  border-bottom: 1px solid black;
+  margin: 0 -0.5rem;
+}
+
+.card__footer {
+  padding: 0.5rem 0;
+}
+
+.card__text--2items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .card__img-box {
+    width: 7rem;
+    min-width: 7rem;
+    height: 7rem;
+    min-height: 7rem;
+  }
+
+  .card__profile h3 {
+    font-size: 1.2rem;
+  }
+
+  .card__text span {
+    font-size: 1rem;
+  }
+
+  .card__footer {
+    padding: 0.7rem 0;
+    font-size: 1.2rem;
+  }
+} 
+
+@media only screen and (min-width: 769px) { 
+  .card__img-box {
+    width: 8rem;
+    min-width: 8rem;
+    height: 8rem;
+    min-height: 8rem;
+  }
+
+  .card__profile h3 {
+    font-size: 1.2rem;
+  }
+
+  .card__text {
+    width: 70%;
+  }
+
+  .card__text span {
+    font-size: 0.9rem;
+  }
+  
+  .card__text span::after {
+    width: 100%;
+    content: '';
+  }
+
+  .card__footer {
+    padding: 0.7rem 0;
+    font-size: 1.2rem;
+  }
+} 
+
+@media only screen and (min-width: 1200px) {
+  .card__profile h3 {
+    font-size: 1.4rem;
+  }
+  
+  .card__text {
+    width: 75%;
+  }
+
+  .card__text span {
+    font-size: 1rem;
+  }
+}
